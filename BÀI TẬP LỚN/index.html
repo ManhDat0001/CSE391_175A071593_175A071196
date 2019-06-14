@@ -1,358 +1,599 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<html>
+<head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-Ua-Compatible" content="ie-edge">
     <title>Cổng thông tin</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/notification.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/other.css" rel="stylesheet">
+    <link href="css/stylefix.css" rel="stylesheet">
+    <!-- Initialize Swiper -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.unobtrusive-ajax.js"></script>
+    <script src="js/jquery.twbsPagination.js"></script>
+    <!-- Swiper JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap-timepicker.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/bootstrap-datepicker.vi.js"></script>
+
+    <script src="js/swiper.min.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/notify.min.js"></script>
+    <script src="js/notify-metro.js"></script>
+    <script src="js/jsservice.js"></script>
+    <script src="js/common.js"></script>
 </head>
-  <body>
-    <script src="js1/jquery-3.4.1.min.js"></script>
-    <script scr="bootstrap/js/bootstrap.js"></script>
-    <script src="js1/script.js"></script>
-    <script src="js1/common.js"></script>
-    <div class="container-fluid ">
-      <div class="row">
-        <div class="col-md-12">
-
-               <ul class="nav justify-content-center">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">TRANG CHỦ</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">LỊCH CÔNG TÁC</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">VIDEO</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">DANH BẠ</a>
-                  </li>
-                    <li class="nav-item">
-                  <a class="nav-link" href="#">LIÊN HỆ</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">ĐĂNG NHẬP</a>
-                  </li>
-                  <li>
-                    <a style="cursor: pointer" onclick="swaplang('en')"><img src="images/en.png" height="20" /></a>
-                  </li>
-
-              </ul>
-
+<body>
+    <div id="panel" class="panel">
+        <div class="container-fluid header">
+            <div class="menutop col-md-12">
+                <div class="row">
+                    <ul class="quick-menu">
+                            <li>
+                                <a href="#" class="actophlu">Trang chủ</a>
+                            </li>
+                            <li>
+                                <a href="#">Lịch công tác</a>
+                            </li>
+                            <li>
+                                <a href="#">Video</a>
+                            </li>
+                            <li><a href="#">Danh bạ</a></li>
+                            <li>
+                                <a href="#">Liên hệ</a>
+                            </li>
+                                <li><a href="C:\Users\KHONGMINH\Desktop\HTML\mẫu\node-website\about">Đăng nhập</a></li>
+                            <li>
+                                <a style="cursor: pointer" onclick="swaplang('en')"><img src="images/en.png" height="20"></a>
+                            </li>
+                      </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+<div class="row">
+  <div class="col-md-7 col-xs-12">
+    <div>
+        <a class="logo" href="/"><img src="images/logo.png"></a>
+        <div class="logo-text">
+                <h3><a href="/">TRƯỜNG ĐẠI HỌC LUẬT HÀ NỘI</a></h3>
+                <h4><a href="/">HANOI LAW UNIVERSITY</a></h4>
         </div>
-    <div class="row">
-      <div class="col-md-7 col-xs-12">
-        <li id="main">
-         <a class="logo" href="#"><img src="images/logo.png" height="80px" weight="90px"></a>
-        </li>
-      <div class="logo-text">
-        <h3>TRƯỜNG ĐẠI HỌC LUẬT HÀ NỘI</h3>
-        <h4>HANOI LAW UNIVERSITY</h4>
-      </div>
     </div>
-      <div class="col-md-5 col-xs-12">
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Nhập từ tìm kiếm" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
-        </form>
-      </div>
-    </div>
-  </div>
 </div>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <div class="row">
-        <nav class="navbar navbar-light bg-light">
-          <a class="navbar-brand" href="#">
-          <i class="fas fa-home"></i>
-          </a>
-        </nav>
-            <!-- <a class="navbar-brand" href="#"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button> -->
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdown">GIỚI THIỆU</a>
-                <div class="dropdown-content" >
-                  <a class="dropdown-item" href="#">Quá trình phát triển</a>
-                  <a class="dropdown-item" href="#">Sứ mạng, tầm nhìn</a>
-                  <a class="dropdown-item" href="#">Sơ đồ tổ chức của trường</a>
-                  <a class="dropdown-item" href="#">Quy chế tổ cức và hoạt động của trường</a>
-                  <a class="dropdown-item" href="#">Thành tựu và khen thưởng</a>
-                  <a class="dropdown-item" href="#">Cơ sở vật chất</a>
-                  <a class="dropdown-item" href="#">Chiến lược phát triển</a>
-                  <a class="dropdown-item" href="#">Liên hệ</a>
+                <div class="col-md-5 col-xs-12">
+                    <div class="search-box">
+                        <form action="/News/Search" method="GET">
+                                <input class="search-input" type="text" name="keyword" placeholder="Nhập từ tìm kiếm">
+                            <button type="submit" class="search-button">
+                                <i class="glyphicon glyphicon-search"></i>
+                                Tìm kiếm
+                            </button>
+                            <div class="clear"></div>
+                        </form>
+                    </div>
                 </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link " href="#" id="navbarDropdown" >TIN TỨC SỰ KIỆN</a>
-                <div class="dropdown-content">
-                  <a class="dropdown-item" href="#">Hoạt động của trường</a>
-                  <a class="dropdown-item" href="#">Hoạt động các đơn vị</a>
-                  <a class="dropdown-item" href="#">Bản tin pháp luật</a>
-                  <a class="dropdown-item" href="#">Các bài viết về Trường </a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdown">ĐƠN VỊ TRỰC THUỘC</a>
-                <div class="dropdown-content">
-                  <div class="btn-group dropright">
-                    <button type="button" class="btn btn-secondary">Khoa</button>
-                    <div class="dropdown-content">
-                      <a class="dropdown-item" href="#">Khoa Pháp luật Quốc tế </a>
-                      <a class="dropdown-item" href="#">Khoa Pháp luật Dân sự</a>
-                      <a class="dropdown-item" href="#">Khoa Pháp luật Hình sự</a>
-                      <a class="dropdown-item" href="#">Khoa Pháp luật Kinh tế</a>
-                      <a class="dropdown-item" href="#">Khoa Pháp luật thương mại quốc tế</a>
-                      <a class="dropdown-item" href="#">Khoa Pháp luật Hành chính-Nhà Nước</a>
-                      <a class="dropdown-item" href="#">Khoa Lý luận chính trị</a>
-                      <a class="dropdown-item" href="#">Khoa đào tạo Sau đại học</a>
-                      <a class="dropdown-item" href="#">Khoa Đào tạo tại chức</a>
-                    </div>
-                  </div>
-                  <div class="btn-group dropright">
-                    <button type="button" class="btn btn-secondary dropdown-toggle">Phòng ban</button>
-                    <div class="dropdown-content">
-                        <a class="dropdown-item" href="#">Phòng Tổ chức-Cán bộ</a>
-                        <a class="dropdown-item" href="#">Phong Đào tạo</a>
-                        <a class="dropdown-item" href="#">Phòng Hành chính-Tổng hợp</a>
-                        <a class="dropdown-item" href="#">Phong Quản lý khoa học-Trị sự tạp chí</a>
-                        <a class="dropdown-item" href="#">Phòng Thanh tra đào tạo</a>
-                        <a class="dropdown-item" href="#">Phòng Công tác sinh viên</a>
-                        <a class="dropdown-item" href="#">Phòng Hợp tác quốc tế</a>
-                        <a class="dropdown-item" href="#">Phòng Tài chính-Kế toán</a>
-                        <a class="dropdown-item" href="#">Phòng Quản trị</a>
-                        <a class="dropdown-item" href="#">Trạm Y Tế</a>
-                        <a class="dropdown-item" href="#">Văn Phòng Đảng Ủy</a>
-                    </div>
-                  </div>
-                <div class="btn-group dropright">
-                      <button type="button" class="btn btn-secondary dropdown-toggle">Trung tâm</button>
-                      <div class="dropdown-content">
-                        <a class="dropdown-item" href="#">Trung tâm Công nghệ thông tin</a>
-                        <a class="dropdown-item" href="#">Trung tâm Đảm bảo chất lượng đào tạo</a>
-                        <a class="dropdown-item" href="#">Trung tâm Thông tin thư viện</a>
-                        <a class="dropdown-item" href="#">Trung tâm Tư vấn pháp luật</a>
-                        <a class="dropdown-item" href="#">Trung tâm Pháp luật Nhận Bản </a>
-                        <a class="dropdown-item" href="#">Trung tâm Pháp luật Đức</a>
-                      </div>
-                    </div>
-                  <div class="btn-group dropright">
-                      <button type="button" class="btn btn-secondary dropdown-toggle">Bộ môn</button>
-                      <div class="dropdown-content">
-                        <a class="dropdown-item" href="#">Bộ môn</a>
-                        <a class="dropdown-item" href="#">Bộ môn GDTC</a>
-                      </div>
-                    </div>
-
-                  <div class="btn-group dropright">
-                    <button type="button" class="btn btn-secondary dropdown-toggle">Viện</button>
-                    <div class="dropdown-content">
-                      <a class="dropdown-item" href="#">Viện Luật so sánh</a>
-                    </div>
-                  </div>
-
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">VĂN BẢN</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">TẠP CHÍ LUẬT HỌC</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button">CHƯƠNG TRÌNH ĐÀO TẠO</a>
-                <div class="dropdown-content" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Chương trình đào tạo Đại học chính quy</a>
-                  <a class="dropdown-item" href="#">Chương trình đào tạo Đại học liên thông chính</a>
-                  <a class="dropdown-item" href="#">Chương trình đào tạo Đại học vừa làm vừa học</a>
-                  <a class="dropdown-item" href="#">Chương trình đào tạo Đại học văn bằng hai chính quy</a>
-                  <a class="dropdown-item" href="#">Chương trình đào tạo Thạc sĩ </a>
-                  <a class="dropdown-item" href="#">Chương trình đào tạo Tiến sĩ</a>
-                  <a class="dropdown-item" href="#">Chương trình đào tạo Song bằng</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">BA CÔNG KHAI</a>
-              </li>
-            </ul>
-          </div>
-
-      </div>
-  </div>
-</nav>
-<!--carousel-->
-<div class="container">
-  <div class="row">
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/h1.gif" class="d-block w-100">
-      </div>
-      <div class="carousel-item">
-        <img src="images/h2.png" class="d-block w-100">
-      </div>
-      <div class="carousel-item">
-        <img src="images/h3.png" class="d-block w-100">
-      </div>
-      <div class="carousel-item">
-        <img src="images/h4.jpg" class="d-block w-100">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-</div>
-<!-- phần nội dung  -->
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <ul class="list-unstyled">
-          <li class="media">
-            <img src="./images/thongbao.jpg" class="thumb" alt="..." weight="133px" height="100px">
-            <div class="media-body">
-              <h5 class="mt-0 mb-1"></h5>
-
-          </li>
-          <li class="media my-4">
-            <img src="./images/thongbao.jpg" class="thumb" alt="..." weight="133px" height="100px">
-            <div class="media-body">
-              <h5 class="mt-0 mb-1">List-based media object</h5>
-
+                <div class="clearfix"></div>
             </div>
-          </li>
-          <li class="media">
-            <img src="./images/thongbao.jpg" class="thumb" alt="..." weight="133px" height="100px">
-            <div class="media-body">
-              <h5 class="mt-0 mb-1">List-based media object</h5>
-
-            </div>
-          </li>
-        <li class="media my-4">
-        <img src="./images/thongbao.jpg" class="thumb" alt="..." weight="133px" height="100px">
-        <div class="media-body">
-          <h5 class="mt-0 mb-1">List-based media object</h5>
-
-        </div>
-      </li>
-      <li class="media">
-        <img src="./images/thongbao.jpg" class="thumb" alt="..." weight="133px" height="100px">
-        <div class="media-body">
-          <h5 class="mt-0 mb-1">List-based media object</h5>
-
-        </div>
-      </li>
-    </ul>
-  </div>
-  <!-- cột 2 -->
-    <div class="col-md-4">
-        <ul class="list-unstyled">
-          <li class="media">
-            <img src="./images/IMG1.jpg" class="thumb" height="100px" weight="131px">
-            <div class="media-body">
-              <h5 class="mt-0 mb-1">List-based media object</h5>
-
-            </div>
-          </li>
-          <li class="media my-4">
-            <img src="./images/IMG2.jpg" class="thumb" height="100px" weight="131px">
-            <div class="media-body">
-              <h5 class="mt-0 mb-1">List-based media object</h5>
-
-            </div>
-          </li>
-          <li class="media">
-            <img src="./images/IMG3.jpg" class="thumb" height="100px" weight="131px">
-            <div class="media-body">
-              <h5 class="mt-0 mb-1">List-based media object</h5>
-
-            </div>
-          </li>
-          <li class="media my-4">
-            <img src="./images/IMG4.jpg" class="thumb" height="100px" weight="131px">
-            <div class="media-body">
-              <h5 class="mt-0 mb-1">List-based media object</h5>
-
-            </div>
-          </li>
-          <li class="media">
-            <img src="./images/IMG5.jpg" class="thumb" height="100px" weight="131px">
-            <div class="media-body">
-              <h5 class="mt-0 mb-1">List-based media object</h5>
-
-            </div>
-          </li>
-  </ul>
-  </div>
-      <div class="col-md-4">
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container-fluid padding">
-    <div class="row footer-left">
-      <div class="col-md-4">
-        <li class="media">
-        <img src="images/logo.png" class="thumb" height="140px">
-          <div class="media-body">
-            <p>Địa chỉ: 87 Nguyễn Chí Thanh, Q. Đống Đa, HN</p>
-            <p>Điện thoại: 8424.38352630 - Fax: 84.4.38343226</p>
-            <p>Email: admin@hlu.edu.vn</p>
-            <p>© 2016 Trường Đại học Luật Hà Nội</p>
-          </div>
-        </li>
-      </div>
-      <div class="col-md-4">
-          <h3>HỆ THỐNG QUẢN TRỊ</h3>
-          <hr class="light">
-        <ul>
-          <li><a href="#">Hộp thư viên chức HLU</a></li>
-          <li><a href="#">Hộp thư người học</a></li>
-          <li><a href="#">Lịch công tác</a></li>
-          <li><a href="#">ISO 9001:2008</a></li>
-          <li><a href="#">Quy chế công khai</a></li>
-          <li><a href="#">Mời thầu - Chào giá</a></li>
-          <li><a href="#">Tuyển sinh - Chính quy</a></li>
+            <div class="menumain col-md-12">
+                <div class="row">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
+                                <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button>
+                              <a class="navbar-brand hidden-lg hidden-md visible-xs" data-toggle="collapse" data-target="#main-navigation" href="#">Danh mục</a>
+                        </div>
+                        
+<!--menutop-->
+<div class="collapse navbar-collapse" id="main-navigation" style="padding: 0;">
+<ul class="nav navbar-nav">
+<li class="trangchu"><a href="C:\Users\KHONGMINH\Desktop\HTML\mẫu\index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+      <li class="dropdown">
+        <a href="http://hlu.edu.vn/News/GetAllNewsByCat/?catid=2044">Giới thiệu</a>
+            <ul class="dropdown-menu">
+                      <li>
+                          <a href="#">Quá trình hình thành và phát triển</a>
+                      </li>
+                      <li>
+                          <a href="#">Sứ mạng, tầm nhìn</a>
+                      </li>
+                      <li>
+                          <a href="#">Sơ đồ tổ chức của trường</a>
+                      </li>
+                      <li>
+                          <a href="#">Quy chế tổ chức và hoạt động của trường</a>
+                      </li>
+                      <li>
+                          <a href="#">Thành tựu và khen thưởng</a>
+                      </li>
+                      <li>
+                          <a href="#">Cơ sở vật chất</a>
+                      </li>
+                      <li>
+                          <a href="#">Chiến lược phát triển</a>
+                      </li>
+                      <li>
+                          <a href="#">Liên hệ</a>
+                      </li>
+          </ul>
+  </li>
+      <li class="dropdown">
+          <a href="http://hlu.edu.vn/News/GetAllNewsByCat/?catid=2056">Tin tức sự kiện</a>
+            <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">Hoạt động của trường</a>
+                        </li>
+                        <li>
+                            <a href="#">Hoạt động các đơn vị</a>
+                        </li>
+                        <li>
+                            <a href="">Bản tin pháp luật</a>
+                        </li>
+                        <li>
+                            <a href="">Các bài viết về Trường</a>
+                        </li>
         </ul>
-      </div>
-      <div class="col-md-4">
-      <h2>THÔNG TIN HỖ TRỢ</h2>
-      <hr class="light">
-          <p>Hệ Chính quy: 0243.835.9803</p>
-          <p>Hệ Sau đại học: 02438.352.354</p>
-          <p>Hệ Tại chức: 02438.355.77</p>
+    </li>
+      <li class="dropdown">
+            <a href="#">Đơn vị trực thuộc</a>
+            <ul class="dropdown-menu">
+                    <li class="dropdown">
+                            <a href="#">Khoa</a>
+                        <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#" target="&#39;_blank&#39;">Khoa Pháp luật Quốc tế</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="&#39;_blank&#39;">Khoa Pháp luật Dân sự</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="&#39;_blank&#39;">Khoa Pháp luật Hình sự</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="&#39;_blank&#39;">Khoa Pháp luật Kinh tế</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="&#39;_blank&#39;">Khoa Pháp luật thương mại quốc tế</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="&#39;_blank&#39;">Khoa Pháp luật Hành chính - Nhà Nước</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="&#39;_blank&#39;">Khoa Lý luận chính trị</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="&#39;_blank&#39;">Khoa Đào tạo Sau đại học</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="&#39;_blank&#39;">Khoa Đào tạo tại chức</a>
+                                    </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                            <a href="#">Phòng Ban</a>
+                        <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Phòng Tổ chức - Cán bộ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="&#39;_blank&#39;">Phòng Đào tạo</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="&#39;_blank&#39;">Phòng Hành chính - Tổng hợp</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Phòng Quản lý khoa học - Trị sự tạp chí</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Phòng Thanh tra đào tạo</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Phòng Công tác sinh viên</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Phòng Hợp tác quốc tế</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Phòng Tài chính - Kế toán</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Phòng Quản trị</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Trạm Y Tế</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/">Văn Phòng Đảng Ủy</a>
+                                    </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                            <a href="#">Trung tâm</a>
+                        <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Trung tâm Công nghệ thông tin</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Trung tâm Đảm bảo chất lượng đào tạo</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="&#39;_blank&#39;">Trung tâm Thông tin thư viện</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Trung tâm Tư vấn pháp luật</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Trung tâm Phápp luật Nhật Bản</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Trung tâm Pháp luật Đức</a>
+                                    </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                            <a href="#">Bộ môn</a>
+                        <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Bộ môn ngoại ngữ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Bộ môn GDTC</a>
+                                    </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                            <a href="#">Viện</a>
+                        <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Viện Luật so sánh</a>
+                                    </li>
+                        </ul>
+                    </li>
+        </ul>
+    </li>
+        <li>
+            <a href="http://hlu.edu.vn/vanban">Văn bản</a>
+        </li>
+        <li>
+            <a href="http://tapchi.hlu.edu.vn/" target="&#39;_blank&#39;">Tạp chí Luật học</a>
+        </li>
+    <li class="dropdown">
+            <a href="http://hlu.edu.vn/News/GetAllNewsByCat/?catid=2123">Chương trình đào tạo</a>
+        <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">Chương trình đào tạo Đại học chính quy</a>
+                        </li>
+                        <li>
+                            <a href="#">Chương trình đào tạo Đại học liên thông chính quy</a>
+                        </li>
+                        <li>
+                            <a href="#">Chương trình đào tạo Đại học vừa làm vừa học</a>
+                        </li>
+                        <li>
+                            <a href="#">Chương trình đào tạo Đại học văn bằng hai chính quy</a>
+                        </li>
+                        <li>
+                            <a href="#">Chương trình đào tạo Thạc sĩ</a>
+                        </li>
+                        <li>
+                            <a href="#">Chương trình đào tạo Tiến sĩ</a>
+                        </li>
+                        <li>
+                            <a href="#">Chương trình đào tạo Song bằng</a>
+                        </li>
+        </ul>
+    </li>
+        <li>
+            <a href="#">BA CÔNG KHAI</a>
+        </li>
+
+</ul>
+            </div>
+        </nav>
+    </div>
+</div>
+</div>
+<div class="container-fluid">
+  <div class="orange-line"></div>
+  <div class="clearfix"></div>
+  <!-- Phần Body -->
+<div class="row">
+    <!-- Swiper -->
+    <div class="swiper-container swiper1 slidebanner">
+        <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+        <a href="#"><img src="images/BannerDKCNTTOnlineMobile(Dot22019).gif"></a>
+    </div>
+    <div class="swiper-slide">
+        <a href="#"><img src="images/BannerThiCNTT1.png"></a>
+    </div>
+    <div class="swiper-slide">
+        <a href="#"><img src="images/FDI2019.jpg"></a>
+    </div>
+    <div class="swiper-slide">
+        <a href="#"><img src="images/TSSDH2019.png"></a>
+    </div>
+    <div class="swiper-slide">
+        <a href="#"><img src="images/HTQT.png"></a>
+    </div>
+    <div class="swiper-slide">
+        <a href="#"><img src="images/-ueh-020304-041516.jpg"></a>
+    </div>
+
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+        <div class="center-menu-box list_afterbaner">
+            <ul>
+                <li>
+                    <div class="item">
+                        <img src="images/dt1.png">
+                        <a style="cursor: pointer" onclick=" redirectToSubdomain('giangvien') ">cán bộ<br> giảng viên</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="images/dt2.png">
+                        <a style="cursor: pointer" onclick=" redirectToSubdomain('sinhvien') ">Sinh viên<br> Học viên</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="images/dt3.png">
+                        <a style="cursor: pointer" onclick=" redirectToSubdomain('cuusinhvien') ">Cựu<br> sinh viên</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="images/dt4.png">
+                        <a style="cursor: pointer" onclick=" redirectToSubdomain('doitachoptac') ">Đối tác<br> hợp tác</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="images/dt5.png">
+                        <a style="cursor: pointer" onclick=" redirectToSubdomain('tuyensinh') ">Cổng<br> tuyển sinh</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="images/dt6.png" style="width: 39px;">
+                        <a style="cursor: pointer" onclick=" redirectToSubdomain('doanthanhnien') ">Đoàn<br> thanh niên</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    <div class="clear"></div>
+</div>
+<div class="orange-line"></div>
+<div class="main-space">
+    <div class="row">
+        <div class="col-md-4" id="zone1">
+<div class="block-news">
+    <h2 class="block-title"><a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Thông tin</a></h2>
+            <div class="item-news">
+                <a href="#" class="thumb"><img src="images/12627_29932_Thong Bao.jpg"></a>
+                <h2>
+                    <a href="#" title="Thông báo triệu tập thí sinh tham dự Lễ khai mạc kỳ thi tuyển viên chức năm 2019 của Trường Đại học Luật Hà Nội">Thông báo triệu tập thí sinh tham dự Lễ khai mạc kỳ thi tuyển...</a>
+                </h2>
+                <div class="time"> 05/06/2019</div>
+                <div class="clear"></div>
+            </div>
+            <div class="item-news">
+                <a href="#" class="thumb"><img src="images/12627_29932_Thong Bao.jpg"></a>
+                <h2>
+                    <a href="#" title="Thông báo danh sách thí sinh đủ điều kiện/không đủ điểu kiện dự kỳ thi tuyển dụng viên chức 2019">Thông báo danh sách thí sinh đủ điều kiện/không đủ điểu kiện dự...</a>
+                        <img src="images/sp_moi.gif" style="margin-left: 5px; width: 30px">
+                </h2>
+                <div class="time"> 03/06/2019</div>
+                <div class="clear"></div>
+            </div>
+            <div class="item-news">
+                <a href="#" class="thumb"><img src="images/12627_29932_Thong%20Bao.jpg"></a>
+                <h2>
+                    <a href="#" title="Thông báo về việc thay đổi nguyện vọng đối với thí sinh đăng ký dự tuyển vị trí Giảng viên Bộ môn Tội phạm học, Khoa Pháp luật hình sự">Thông báo về việc thay đổi nguyện vọng đối với thí sinh đăng ký...</a>
+                </h2>
+                <div class="time"> 30/05/2019</div>
+                <div class="clear"></div>
+            </div>
+            <div class="item-news">
+                <a href="#" class="thumb"><img src="images/12627_29932_Thong%20Bao.jpg"></a>
+                <h2>
+                    <a href="#" title="Quyết định về việc công nhận kết quả kiểm tra sát hạch và kết quả trúng tuyển đối với viên chức đủ điều kiện tham dự xét tiếp nhận vào viên chức trong kỳ thi tuyển viên chức năm 2019 của Trường Đại học Luật Hà Nội">Quyết định về việc công nhận kết quả kiểm tra sát hạch và kết quả...</a>
+                </h2>
+                <div class="time"> 30/05/2019</div>
+                <div class="clear"></div>
+            </div>
+                <a href="#" class="view-more">Xem thêm »</a>
+</div>
+
+        </div>
+        <div class="col-md-4" id="zone2">
+
+<div class="block-news">
+    <h2 class="block-title"><a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Sự kiện</a></h2>
+            <div class="item-news">
+                <a href="#" class="thumb"><img src="images/IMG_9858.JPG"></a>
+                <h2>
+                    <a href="#" title="HỘI THẢO QUỐC TẾ: TƯ PHÁP VỚI NGƯỜI CHƯA THÀNHNH NIÊN - KINH NGHIỆM QUỐC TẾ VÀ BÀI HỌC CHO VIỆT NAM">HỘI THẢO QUỐC TẾ: TƯ PHÁP VỚI NGƯỜI CHƯA THÀNH NIÊN - KINH NGHIỆM...</a>
+                </h2>
+                <div class="time"> 28/05/2019</div>
+                <div class="clear"></div>
+            </div>
+            <div class="item-news">
+                <a href="#" class="thumb"><img src="images/IMG_0306.JPG"></a>
+                <h2>
+                    <a href="#" title="Tuần lễ Nghiên cứu khoa học năm 2019: HỘI NGHỊ TỔNG KẾT HOẠT ĐỘNG NGHIÊN CỨU KHOA HỌC NĂM 2019">Tuần lễ Nghiên cứu khoa học năm 2019: HỘI NGHỊ TỔNG KẾT HOẠT ĐỘNG...</a>
+                        <img src="images/sp_moi.gif" style="margin-left: 5px; width: 30px">
+                </h2>
+                <div class="time"> 20/05/2019</div>
+                <div class="clear"></div>
+            </div>
+            <div class="item-news">
+                <a href="#" class="thumb"><img src="images/Giai%20nhat.JPG"></a>
+                <h2>
+                    <a href="#" title="Tuần lễ nghiên cứu khoa học năm 2019: LỄ TỔNG KẾT CUỘC THI SINH VIÊN NGHIÊN CỨU KHOA HỌC NĂM 2019">Tuần lễ nghiên cứu khoa học năm 2019: LỄ TỔNG KẾT CUỘC THI SINH...</a>
+                        <img src="images/sp_moi.gif" style="margin-left: 5px; width: 30px">
+                </h2>
+                <div class="time"> 17/05/2019</div>
+                <div class="clear"></div>
+            </div>
+            <div class="item-news">
+                <a href="#" class="thumb"><img src="images/IMG_0044.JPG"></a>
+                <h2>
+                    <a href="" title="TỌA ĐÀM VỀ XÂY DỰNG NHÓM NGHIÊN CỨU MẠNH">TỌA ĐÀM VỀ XÂY DỰNG NHÓM NGHIÊN CỨU MẠNH</a>
+                </h2>
+                <div class="time"> 16/05/2019</div>
+                <div class="clear"></div>
+            </div>
+                <a href="#" class="view-more">Xem thêm »</a>
+</div>
+
+        </div>
+        <div class="col-md-4">
+            <div class="block-news">
+                    <h2 class="block-title"><a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i> Hình ảnh</a></h2>
+                <div class="gallery">
+                    <div class="gallery-border">
+                        <!-- Swiper -->
+                        <div class="swiper-container swiper3 no-shadow swiper-container-horizontal swiper-container-free-mode swiper-container-3d swiper-container-coverflow">
+                            <div class="swiper-wrapper" style="transform: translate3d(-978px, 0px, 0px); transition-duration: 0ms;">
+
+    <div class="swiper-slide galley-item">
+        <a href="#"><img src="images/3%2884%29.jpg"></a>
+        <a href="#"><div class="caption">Phó Hiệu Trưởng Trần Quang Huy</div></a>
+    </div>
+    <div class="swiper-slide galley-item">
+        <a href="#"><img src="images/IMG_2281.JPG"></a>
+        <a href="#"><div class="caption">Phó Hiệu Trưởng Vũ Thị Lan Anh</div></a>
+    </div>
+    <div class="swiper-slide galley-item">
+        <a href="#"><img src="images/image005_HLXN_jpg.jpg"></a>
+        <a href="#"><div class="caption">Phó Hiệu Trưởng Chu Mạnh Hùng</div></a>
+    </div>
+  </div>
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
       </div>
     </div>
   </div>
+<div id="linkwebsite">
+    <div class="title">
+        <i class="fa fa-link" aria-hidden="true"></i> Liên kết nhanh
+    </div>
+          <div>
+            <div class="swiper-slide">
+                <a href="https://login.microsoftonline.com/" class="ad-img" target="_blank"><img src="images/2074_1.jpg" title="Email"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="http://thuvien.hlu.edu.vn/" class="ad-img" target="_blank"><img src="images/book.png" title="Cổng thông tin thư viện"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="http://www.facebook.com/admin.hlu.edu.vn" class="ad-img" target="_blank"><img src="images/fb.png" title="FanPages của HLU"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="http://dbcldt.hlu.edu.vn/SubNews/Details/17481" class="ad-img" target="_blank"><img src="images/1288112920_decuong copy.jpg" title="Đề cương môn học"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="http://www.dangkyhoc.hlu.edu.vn/CMCSoft.IU.Web.info/login.aspx" class="ad-img" target="_blank"><img src="images/1317890733_dang-ky-hoc1.png" title="Đăng ký học"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="http://tvpl.hlu.edu.vn/" class="ad-img" target="_blank"><img src="images/tttvpl.jpg" title="Trung tâm Tư vấn pháp luật"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="http://123.31.31.214/Dhl/DangkyTS" class="ad-img" target="_blank"><img src="images/SDHONLINE.gif" title="Hệ thống đăng ký tuyển sinh Sau đại học Online"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://www.microsoft.com/vi-vn" class="ad-img" target="_blank"><img src="images/images.png" title="Microsoft"></a>
+            </div>
+        </div>
+      </div>
+    </div>
+        <div class="clear"></div>
+    </div>
+</div>
+    <div class="orange-line"></div>
+    <div class="orange-line"></div>
+</div>
+<footer>
+    <div class="footer container-fluid">
+      <div class="row footer-container">
+        <div class="col-md-6 footleft">
+            <div class="big-logo col-md-3 col-sm-3">
+                 <img src="images/logo.png">
+            </div>
+    <div class="footer-address col-md-8  col-sm-8">
+<div>Địa chỉ: 87 Nguyễn Chí Thanh, Q. Đống Đa,&nbsp;HN<br>
+Điện thoại: 8424.38352630 - Fax: 84.4.38343226<br>
+Email: admin@hlu.edu.vn<br>
+&copy; 2016 Trường Đại học Luật Hà Nội</div>
+    </div>
+    <div class="clear"></div>
+</div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<div class="col-md-3">
+    <div class="footer-info">
+            <h2 class="title">HỆ THỐNG QUẢN TRỊ</h2>
+        <ul>
+	<li><a href="#">Hộp thư viên chức HLU</a></li>
+	<li><a href="#">Hộp thư người học</a></li>
+	<li><a href="/calendar" target="_blank">Lịch công tác</a></li>
+	<li><a href="#">ISO 9001:2008</a></li>
+	<li><a href="#">Quy chế công khai</a></li>
+	<li><a href="#">Mời thầu - Chào giá;</a></li>
+	<li><a href="#">Tuyển sinh - Chính quy </a></li>
+</ul>
+    </div>
+</div>
+
+<div class="col-md-3">
+    <div class="footer-info">
+            <h2 class="title">Thông tin hỗ trợ</h2>
+        <div style="line-height: 30px;">
+<p>Hệ&nbsp;Chính quy: 0243.835.9803&nbsp; &nbsp; &nbsp; &nbsp; Hệ&nbsp;Sau đại học: 02438.352.354 &nbsp; Hệ&nbsp;Tại chức: 02438.355.771&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p><br></div>
+      </div>
+    </div>
+  </div>
 </footer>
-  </body>
+
+
+
+<script type="text/javascript">window._sbzq||function(e){e._sbzq=[];var t=e._sbzq;t.push(["_setAccount",71238]);var n=e.location.protocol=="https:"?"https:":"http:";var r=document.createElement("script");r.type="text/javascript";r.async=true;r.src=n+"//static.subiz.com/public/js/loader.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)}(window);</script>
+        </div>
+    </div>
+   <div id="menu" class="hide">
+        <button class="btn-toggle-left toggle-button btn-block"><strong> <i class="glyphicon glyphicon-remove-sign"></i> Ẩn</strong> (&larr; trượt sang trái )</button>
+    </div>
+    <div id="histatsC"><img border="0" src="images/3658519.gif"></div>
+    <div style="width: 114px; height:114px; position: fixed; bottom: 0; right: 0; z-index: 999999999999;"></div>
+</body>
 </html>
+<script src="js/slideout.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/home.js"></script> -->
+ <!--Histats.com  START  (aync)-->
+ <script type="text/javascript">
+var _Hasync = _Hasync || [];
+    _Hasync.push(['Histats.startgif', '1,3676070,4,10003,"div#histatsC {position: fixed !important; bottom: -40px !important; right: 18px !important; z-index: 9999 !important; transform: rotate(45deg) !important; display:block !important}"']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function () {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_giftop_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+    })();</script>
+<!-- Histats.com  END -->
